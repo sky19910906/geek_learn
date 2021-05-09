@@ -1,0 +1,144 @@
+Classfile /D:/workspace/eclipse/wallet/skyee/sts-service/src/main/java/com/test/Hello.class
+  Last modified 2021-5-9; size 923 bytes
+  MD5 checksum ab85ecc8c529e98bbe924df3dc21420b
+  Compiled from "Hello.java"
+public class com.test.Hello
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #12.#32        // java/lang/Object."<init>":()V
+   #2 = Fieldref           #33.#34        // java/lang/System.out:Ljava/io/PrintStream;
+   #3 = String             #35            // c>0
+   #4 = Methodref          #36.#37        // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #5 = Class              #38            // java/lang/StringBuilder
+   #6 = Methodref          #5.#32         // java/lang/StringBuilder."<init>":()V
+   #7 = String             #39            // c的当前值为：
+   #8 = Methodref          #5.#40         // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #9 = Methodref          #5.#41         // java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+  #10 = Methodref          #5.#42         // java/lang/StringBuilder.toString:()Ljava/lang/String;
+  #11 = Class              #43            // com/test/Hello
+  #12 = Class              #44            // java/lang/Object
+  #13 = Utf8               <init>
+  #14 = Utf8               ()V
+  #15 = Utf8               Code
+  #16 = Utf8               LineNumberTable
+  #17 = Utf8               LocalVariableTable
+  #18 = Utf8               this
+  #19 = Utf8               Lcom/test/Hello;
+  #20 = Utf8               main
+  #21 = Utf8               ([Ljava/lang/String;)V
+  #22 = Utf8               i
+  #23 = Utf8               I
+  #24 = Utf8               args
+  #25 = Utf8               [Ljava/lang/String;
+  #26 = Utf8               a
+  #27 = Utf8               b
+  #28 = Utf8               c
+  #29 = Utf8               StackMapTable
+  #30 = Utf8               SourceFile
+  #31 = Utf8               Hello.java
+  #32 = NameAndType        #13:#14        // "<init>":()V
+  #33 = Class              #45            // java/lang/System
+  #34 = NameAndType        #46:#47        // out:Ljava/io/PrintStream;
+  #35 = Utf8               c>0
+  #36 = Class              #48            // java/io/PrintStream
+  #37 = NameAndType        #49:#50        // println:(Ljava/lang/String;)V
+  #38 = Utf8               java/lang/StringBuilder
+  #39 = Utf8               c的当前值为：
+  #40 = NameAndType        #51:#52        // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #41 = NameAndType        #51:#53        // append:(I)Ljava/lang/StringBuilder;
+  #42 = NameAndType        #54:#55        // toString:()Ljava/lang/String;
+  #43 = Utf8               com/test/Hello
+  #44 = Utf8               java/lang/Object
+  #45 = Utf8               java/lang/System
+  #46 = Utf8               out
+  #47 = Utf8               Ljava/io/PrintStream;
+  #48 = Utf8               java/io/PrintStream
+  #49 = Utf8               println
+  #50 = Utf8               (Ljava/lang/String;)V
+  #51 = Utf8               append
+  #52 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #53 = Utf8               (I)Ljava/lang/StringBuilder;
+  #54 = Utf8               toString
+  #55 = Utf8               ()Ljava/lang/String;
+{
+  public com.test.Hello();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/test/Hello;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=5, args_size=1
+         0: iconst_1 //常量1
+         1: istore_1 //赋值本地变量1（a）
+         2: iconst_1 //常量1
+         3: istore_2 //赋值本地变量2（b）
+         4: iload_1  //加载变量1压栈
+         5: iload_2	 //加载变量2压栈
+         6: iadd	 //执行a+b
+         7: istore_3 //结果赋值变量3 （c）
+         8: iload_3  //加载变量3 （c）
+         9: ifle          20 //如果 c 小于等于0，跳到20
+        12: getstatic     #2    //获取PrintStream              // Field java/lang/System.out:Ljava/io/PrintStream;
+        15: ldc           #3    //将常量3压入栈               // String c>0
+        17: invokevirtual #4    //调用Println打印              // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        20: iconst_0			//常量0
+        21: istore        4		//赋值变量4
+        23: iload         4		//加载变量4
+        25: iconst_2			//常量2
+        26: if_icmpge     63	//如果i大于等于常量2 跳到63执行
+        29: iinc          3, -1 //将变量3减1
+        32: getstatic     #2    //获取PrintStream                // Field java/lang/System.out:Ljava/io/PrintStream;
+        35: new           #5    //new StringBuilder              // class java/lang/StringBuilder
+        38: dup					//复制对象引用
+        39: invokespecial #6    //调用StringBuilder的init              // Method java/lang/StringBuilder."<init>":()V
+        42: ldc           #7    //将常量7压栈              // String c的当前值为：
+        44: invokevirtual #8   	//调用append               // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        47: iload_3				//加载变量3
+        48: invokevirtual #9    //调用append                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+        51: invokevirtual #10   //调用toString                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        54: invokevirtual #4    //调用println               // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        57: iinc          4, 1  //将变量4加1
+        60: goto          23	//跳到23执行
+        63: return
+      LineNumberTable:
+        line 6: 0
+        line 7: 2
+        line 8: 4
+        line 9: 8
+        line 10: 12
+        line 12: 20
+        line 13: 29
+        line 14: 32
+        line 12: 57
+        line 16: 63
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           23      40     4     i   I
+            0      64     0  args   [Ljava/lang/String;
+            2      62     1     a   I
+            4      60     2     b   I
+            8      56     3     c   I
+      StackMapTable: number_of_entries = 3
+        frame_type = 254 /* append */
+          offset_delta = 20
+          locals = [ int, int, int ]
+        frame_type = 252 /* append */
+          offset_delta = 2
+          locals = [ int ]
+        frame_type = 250 /* chop */
+          offset_delta = 39
+}
