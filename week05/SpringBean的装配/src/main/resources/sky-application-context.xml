@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+                        http://www.springframework.org/schema/context
+                        http://www.springframework.org/schema/context/spring-context-3.2.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+    
+    <bean id="good" class="com.sky.Good" primary="true">
+        <property name="id" value="0" />
+        <property name="name" value="初始化" />
+    </bean>
+    <bean id="good1" class="com.sky.Good">
+        <property name="id" value="1" />
+        <property name="name" value="无糖雪碧" />
+    </bean>
+    <bean id="good2" class="com.sky.Good">
+        <property name="id" value="2" />
+        <property name="name" value="无糖可乐" />
+    </bean>
+    <!-- 手动装配 -->
+    <bean id="order1" class="com.sky.Order">
+        <property name="good" ref="good1" />
+    </bean>
+    
+    <!-- xml自动装配 -byName -->
+    <bean id="order2" class="com.sky.Order" autowire="byName" />
+    <!-- xml自动装配 -bytype -->
+    <bean id="order3" class="com.sky.Order" autowire="byType" />
+    
+    <!-- xml自动装配 -"constructor" -->
+    <bean id="order4" class="com.sky.Order" autowire="constructor" />
+    
+</beans>
