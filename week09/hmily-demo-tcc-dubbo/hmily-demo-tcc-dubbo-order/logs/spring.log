@@ -1,0 +1,75 @@
+2021-07-04 18:46:21.400  INFO 30224 --- [main] o.d.h.d.d.o.DubboHmilyOrderApplication   : Starting DubboHmilyOrderApplication on LAPTOP-4SVCDIO0 with PID 30224 (D:\workspace\code\hmily\hmily-demo\hmily-demo-tcc\hmily-demo-tcc-dubbo\hmily-demo-tcc-dubbo-order\target\classes started by sky in D:\workspace\code\hmily\hmily-demo\hmily-demo-tcc\hmily-demo-tcc-dubbo\hmily-demo-tcc-dubbo-order)
+2021-07-04 18:46:21.403 DEBUG 30224 --- [main] o.d.h.d.d.o.DubboHmilyOrderApplication   : Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2021-07-04 18:46:21.405  INFO 30224 --- [main] o.d.h.d.d.o.DubboHmilyOrderApplication   : No active profile set, falling back to default profiles: default
+2021-07-04 18:46:24.138  INFO 30224 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2698 ms
+2021-07-04 18:46:24.241 DEBUG 30224 --- [main] org.apache.ibatis.logging.LogFactory     : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2021-07-04 18:46:24.278 DEBUG 30224 --- [main] org.apache.ibatis.io.VFS                 : Using VFS adapter org.mybatis.spring.boot.autoconfigure.SpringBootVFS
+2021-07-04 18:46:24.279 DEBUG 30224 --- [main] org.apache.ibatis.io.ResolverUtil        : Checking to see if class org.dromara.hmily.demo.common.order.entity.Order matches criteria [is assignable to Object]
+2021-07-04 18:46:31.135 ERROR 30224 --- [Curator-Framework-0] o.a.c.f.imps.CuratorFrameworkImpl        : Background operation retry gave up
+
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:102) ~[zookeeper-3.6.0.jar:3.6.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.checkBackgroundRetry(CuratorFrameworkImpl.java:851) [curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.performBackgroundOperation(CuratorFrameworkImpl.java:999) [curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.backgroundOperationsLoop(CuratorFrameworkImpl.java:952) [curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.access$300(CuratorFrameworkImpl.java:66) [curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl$4.call(CuratorFrameworkImpl.java:342) [curator-framework-5.1.0.jar:5.1.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_191]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_191]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
+
+2021-07-04 18:46:31.136 ERROR 30224 --- [Curator-Framework-0] o.a.c.f.imps.CuratorFrameworkImpl        : Background retry gave up
+
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.performBackgroundOperation(CuratorFrameworkImpl.java:981) [curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.backgroundOperationsLoop(CuratorFrameworkImpl.java:952) [curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.access$300(CuratorFrameworkImpl.java:66) [curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl$4.call(CuratorFrameworkImpl.java:342) [curator-framework-5.1.0.jar:5.1.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_191]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_191]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
+
+2021-07-04 18:47:42.211  INFO 21916 --- [main] o.d.h.d.d.o.DubboHmilyOrderApplication   : Starting DubboHmilyOrderApplication on LAPTOP-4SVCDIO0 with PID 21916 (D:\workspace\code\hmily\hmily-demo\hmily-demo-tcc\hmily-demo-tcc-dubbo\hmily-demo-tcc-dubbo-order\target\classes started by sky in D:\workspace\code\hmily\hmily-demo\hmily-demo-tcc\hmily-demo-tcc-dubbo\hmily-demo-tcc-dubbo-order)
+2021-07-04 18:47:42.214 DEBUG 21916 --- [main] o.d.h.d.d.o.DubboHmilyOrderApplication   : Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2021-07-04 18:47:42.216  INFO 21916 --- [main] o.d.h.d.d.o.DubboHmilyOrderApplication   : No active profile set, falling back to default profiles: default
+2021-07-04 18:47:44.957  INFO 21916 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2705 ms
+2021-07-04 18:47:45.052 DEBUG 21916 --- [main] org.apache.ibatis.logging.LogFactory     : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2021-07-04 18:47:45.100 DEBUG 21916 --- [main] org.apache.ibatis.io.VFS                 : Using VFS adapter org.mybatis.spring.boot.autoconfigure.SpringBootVFS
+2021-07-04 18:47:45.102 DEBUG 21916 --- [main] org.apache.ibatis.io.ResolverUtil        : Checking to see if class org.dromara.hmily.demo.common.order.entity.Order matches criteria [is assignable to Object]
+2021-07-04 18:47:51.957 ERROR 21916 --- [Curator-Framework-0] o.a.c.f.imps.CuratorFrameworkImpl        : Background operation retry gave up
+
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:102) ~[zookeeper-3.6.0.jar:3.6.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.checkBackgroundRetry(CuratorFrameworkImpl.java:851) [curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.performBackgroundOperation(CuratorFrameworkImpl.java:999) [curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.backgroundOperationsLoop(CuratorFrameworkImpl.java:952) [curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.access$300(CuratorFrameworkImpl.java:66) [curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl$4.call(CuratorFrameworkImpl.java:342) [curator-framework-5.1.0.jar:5.1.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_191]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_191]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
+
+2021-07-04 18:47:51.959 ERROR 21916 --- [Curator-Framework-0] o.a.c.f.imps.CuratorFrameworkImpl        : Background retry gave up
+
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.performBackgroundOperation(CuratorFrameworkImpl.java:981) [curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.backgroundOperationsLoop(CuratorFrameworkImpl.java:952) [curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.access$300(CuratorFrameworkImpl.java:66) [curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl$4.call(CuratorFrameworkImpl.java:342) [curator-framework-5.1.0.jar:5.1.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_191]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_191]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
+
+2021-07-04 18:50:16.154  INFO 21916 --- [main] o.d.h.d.d.o.DubboHmilyOrderApplication   : Started DubboHmilyOrderApplication in 154.279 seconds (JVM running for 154.843)

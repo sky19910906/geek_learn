@@ -1,0 +1,131 @@
+2021-07-04 18:42:15.957  INFO 29044 --- [main] o.d.h.d.d.a.DubboHmilyAccountApplication : Starting DubboHmilyAccountApplication on LAPTOP-4SVCDIO0 with PID 29044 (D:\workspace\code\hmily\hmily-demo\hmily-demo-tcc\hmily-demo-tcc-dubbo\hmily-demo-tcc-dubbo-account\target\classes started by sky in D:\workspace\code\hmily\hmily-demo\hmily-demo-tcc\hmily-demo-tcc-dubbo\hmily-demo-tcc-dubbo-account)
+2021-07-04 18:42:15.981 DEBUG 29044 --- [main] o.d.h.d.d.a.DubboHmilyAccountApplication : Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2021-07-04 18:42:15.983  INFO 29044 --- [main] o.d.h.d.d.a.DubboHmilyAccountApplication : No active profile set, falling back to default profiles: default
+2021-07-04 18:42:17.566 ERROR 29044 --- [main] o.d.h.r.d.manager.AbstractHmilyDatabase  : hmily jdbc log init exception please check config:Access denied for user 'root'@'localhost' (using password: NO)
+2021-07-04 18:42:17.572 ERROR 29044 --- [main] o.d.hmily.core.bootstrap.HmilyBootstrap  :  hmily init exception:
+
+org.dromara.hmily.common.exception.HmilyRuntimeException: Access denied for user 'root'@'localhost' (using password: NO)
+	at org.dromara.hmily.repository.database.manager.AbstractHmilyDatabase.init(AbstractHmilyDatabase.java:282) ~[hmily-repository-database-manager-2.1.2-SNAPSHOT.jar:na]
+	at org.dromara.hmily.core.bootstrap.HmilyBootstrap.loadHmilyRepository(HmilyBootstrap.java:117) ~[hmily-core-2.1.2-SNAPSHOT.jar:na]
+	at org.dromara.hmily.core.bootstrap.HmilyBootstrap.start(HmilyBootstrap.java:76) ~[hmily-core-2.1.2-SNAPSHOT.jar:na]
+	at org.dromara.hmily.spring.HmilyApplicationContextAware.postProcessBeanFactory(HmilyApplicationContextAware.java:50) [hmily-spring-2.1.2-SNAPSHOT.jar:na]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:286) [spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:181) [spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:691) [spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:528) [spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.dromara.hmily.demo.dubbo.account.DubboHmilyAccountApplication.main(DubboHmilyAccountApplication.java:43) [classes/:na]
+
+2021-07-04 18:44:26.246  INFO 26472 --- [main] o.d.h.d.d.a.DubboHmilyAccountApplication : Starting DubboHmilyAccountApplication on LAPTOP-4SVCDIO0 with PID 26472 (D:\workspace\code\hmily\hmily-demo\hmily-demo-tcc\hmily-demo-tcc-dubbo\hmily-demo-tcc-dubbo-account\target\classes started by sky in D:\workspace\code\hmily\hmily-demo\hmily-demo-tcc\hmily-demo-tcc-dubbo\hmily-demo-tcc-dubbo-account)
+2021-07-04 18:44:26.248 DEBUG 26472 --- [main] o.d.h.d.d.a.DubboHmilyAccountApplication : Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2021-07-04 18:44:26.250  INFO 26472 --- [main] o.d.h.d.d.a.DubboHmilyAccountApplication : No active profile set, falling back to default profiles: default
+2021-07-04 18:44:27.850 ERROR 26472 --- [main] o.d.h.r.d.manager.AbstractHmilyDatabase  : hmily jdbc log init exception please check config:Access denied for user 'root'@'localhost' (using password: NO)
+2021-07-04 18:44:27.853 ERROR 26472 --- [main] o.d.hmily.core.bootstrap.HmilyBootstrap  :  hmily init exception:
+
+org.dromara.hmily.common.exception.HmilyRuntimeException: Access denied for user 'root'@'localhost' (using password: NO)
+	at org.dromara.hmily.repository.database.manager.AbstractHmilyDatabase.init(AbstractHmilyDatabase.java:282) ~[hmily-repository-database-manager-2.1.2-SNAPSHOT.jar:na]
+	at org.dromara.hmily.core.bootstrap.HmilyBootstrap.loadHmilyRepository(HmilyBootstrap.java:117) ~[hmily-core-2.1.2-SNAPSHOT.jar:na]
+	at org.dromara.hmily.core.bootstrap.HmilyBootstrap.start(HmilyBootstrap.java:76) ~[hmily-core-2.1.2-SNAPSHOT.jar:na]
+	at org.dromara.hmily.spring.HmilyApplicationContextAware.postProcessBeanFactory(HmilyApplicationContextAware.java:50) [hmily-spring-2.1.2-SNAPSHOT.jar:na]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:286) [spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:181) [spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:691) [spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:528) [spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.dromara.hmily.demo.dubbo.account.DubboHmilyAccountApplication.main(DubboHmilyAccountApplication.java:43) [classes/:na]
+
+2021-07-04 18:46:49.040  INFO 8052 --- [main] o.d.h.d.d.a.DubboHmilyAccountApplication : Starting DubboHmilyAccountApplication on LAPTOP-4SVCDIO0 with PID 8052 (D:\workspace\code\hmily\hmily-demo\hmily-demo-tcc\hmily-demo-tcc-dubbo\hmily-demo-tcc-dubbo-account\target\classes started by sky in D:\workspace\code\hmily\hmily-demo\hmily-demo-tcc\hmily-demo-tcc-dubbo\hmily-demo-tcc-dubbo-account)
+2021-07-04 18:46:49.049 DEBUG 8052 --- [main] o.d.h.d.d.a.DubboHmilyAccountApplication : Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2021-07-04 18:46:49.051  INFO 8052 --- [main] o.d.h.d.d.a.DubboHmilyAccountApplication : No active profile set, falling back to default profiles: default
+2021-07-04 18:46:51.097 DEBUG 8052 --- [main] org.apache.ibatis.logging.LogFactory     : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2021-07-04 18:46:51.128 DEBUG 8052 --- [main] org.apache.ibatis.io.VFS                 : Using VFS adapter org.mybatis.spring.boot.autoconfigure.SpringBootVFS
+2021-07-04 18:46:51.129 DEBUG 8052 --- [main] org.apache.ibatis.io.ResolverUtil        : Checking to see if class org.dromara.hmily.demo.common.account.entity.AccountDO matches criteria [is assignable to Object]
+2021-07-04 18:46:57.972 ERROR 8052 --- [Curator-Framework-0] o.a.c.f.imps.CuratorFrameworkImpl        : Background operation retry gave up
+
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:102) ~[zookeeper-3.6.0.jar:3.6.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.checkBackgroundRetry(CuratorFrameworkImpl.java:851) [curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.performBackgroundOperation(CuratorFrameworkImpl.java:999) [curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.backgroundOperationsLoop(CuratorFrameworkImpl.java:952) [curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.access$300(CuratorFrameworkImpl.java:66) [curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl$4.call(CuratorFrameworkImpl.java:342) [curator-framework-5.1.0.jar:5.1.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_191]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_191]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
+
+2021-07-04 18:46:57.973 ERROR 8052 --- [Curator-Framework-0] o.a.c.f.imps.CuratorFrameworkImpl        : Background retry gave up
+
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.performBackgroundOperation(CuratorFrameworkImpl.java:981) [curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.backgroundOperationsLoop(CuratorFrameworkImpl.java:952) [curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.access$300(CuratorFrameworkImpl.java:66) [curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl$4.call(CuratorFrameworkImpl.java:342) [curator-framework-5.1.0.jar:5.1.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_191]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_191]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
+
+2021-07-04 18:48:43.569 ERROR 8052 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to register dubbo://192.168.31.161:20881/org.dromara.hmily.demo.common.account.api.AccountService?accepts=0&anyhost=true&application=account_service&bean.name=org.dromara.hmily.demo.common.account.api.AccountService&buffer=8192&charset=UTF-8&client=netty&dubbo=2.0.2&executes=20&generic=false&interface=org.dromara.hmily.demo.common.account.api.AccountService&methods=testPayment,mockTryPaymentTimeout,mockTryPaymentException,findByUserId,payment,paymentWithNested,paymentWithNestedException&payload=8388608&pid=8052&queues=0&server=netty&side=provider&threadpool=fixed&threads=500&timestamp=1625395686639 to registry localhost:2181, cause: Failed to register dubbo://192.168.31.161:20881/org.dromara.hmily.demo.common.account.api.AccountService?accepts=0&anyhost=true&application=account_service&bean.name=org.dromara.hmily.demo.common.account.api.AccountService&buffer=8192&charset=UTF-8&client=netty&dubbo=2.0.2&executes=20&generic=false&interface=org.dromara.hmily.demo.common.account.api.AccountService&methods=testPayment,mockTryPaymentTimeout,mockTryPaymentException,findByUserId,payment,paymentWithNested,paymentWithNestedException&payload=8388608&pid=8052&queues=0&server=netty&side=provider&threadpool=fixed&threads=500&timestamp=1625395686639 to zookeeper zookeeper://localhost:2181/com.alibaba.dubbo.registry.RegistryService?application=account_service&dubbo=2.0.2&interface=com.alibaba.dubbo.registry.RegistryService&pid=8052&timestamp=1625395611196, cause: KeeperErrorCode = ConnectionLoss for /dubbo
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.register(FailbackRegistry.java:150) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.register(RegistryProtocol.java:126) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.export(RegistryProtocol.java:146) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:55) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:98) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.qos.protocol.QosProtocolWrapper.export(QosProtocolWrapper.java:60) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.rpc.Protocol$Adaptive.export(Protocol$Adaptive.java) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:513) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:358) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:317) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:216) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.config.spring.ServiceBean.export(ServiceBean.java:291) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:131) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:53) ~[dubbo-2.6.5.jar:2.6.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:398) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:355) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:882) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.dromara.hmily.demo.dubbo.account.DubboHmilyAccountApplication.main(DubboHmilyAccountApplication.java:43) [classes/:na]
+Caused by: com.alibaba.dubbo.rpc.RpcException: Failed to register dubbo://192.168.31.161:20881/org.dromara.hmily.demo.common.account.api.AccountService?accepts=0&anyhost=true&application=account_service&bean.name=org.dromara.hmily.demo.common.account.api.AccountService&buffer=8192&charset=UTF-8&client=netty&dubbo=2.0.2&executes=20&generic=false&interface=org.dromara.hmily.demo.common.account.api.AccountService&methods=testPayment,mockTryPaymentTimeout,mockTryPaymentException,findByUserId,payment,paymentWithNested,paymentWithNestedException&payload=8388608&pid=8052&queues=0&server=netty&side=provider&threadpool=fixed&threads=500&timestamp=1625395686639 to zookeeper zookeeper://localhost:2181/com.alibaba.dubbo.registry.RegistryService?application=account_service&dubbo=2.0.2&interface=com.alibaba.dubbo.registry.RegistryService&pid=8052&timestamp=1625395611196, cause: KeeperErrorCode = ConnectionLoss for /dubbo
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doRegister(ZookeeperRegistry.java:116) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.register(FailbackRegistry.java:137) ~[dubbo-2.6.5.jar:2.6.5]
+	... 24 common frames omitted
+Caused by: java.lang.IllegalStateException: KeeperErrorCode = ConnectionLoss for /dubbo
+	at com.alibaba.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.createPersistent(CuratorZookeeperClient.java:79) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:67) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:62) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:62) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:62) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doRegister(ZookeeperRegistry.java:114) ~[dubbo-2.6.5.jar:2.6.5]
+	... 25 common frames omitted
+Caused by: org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /dubbo
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:102) ~[zookeeper-3.6.0.jar:3.6.0]
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54) ~[zookeeper-3.6.0.jar:3.6.0]
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:1836) ~[zookeeper-3.6.0.jar:3.6.0]
+	at org.apache.curator.framework.imps.CreateBuilderImpl$16.call(CreateBuilderImpl.java:1131) ~[curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CreateBuilderImpl$16.call(CreateBuilderImpl.java:1113) ~[curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:93) ~[curator-client-5.1.0.jar:na]
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:1110) ~[curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:593) ~[curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:583) ~[curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:561) ~[curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:48) ~[curator-framework-5.1.0.jar:5.1.0]
+	at com.alibaba.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.createPersistent(CuratorZookeeperClient.java:76) ~[dubbo-2.6.5.jar:2.6.5]
+	... 30 common frames omitted
+

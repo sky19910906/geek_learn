@@ -1,0 +1,91 @@
+2021-07-04 18:47:36.205  INFO 29784 --- [main] d.h.d.d.i.DubboHmilyInventoryApplication : Starting DubboHmilyInventoryApplication on LAPTOP-4SVCDIO0 with PID 29784 (D:\workspace\code\hmily\hmily-demo\hmily-demo-tcc\hmily-demo-tcc-dubbo\hmily-demo-tcc-dubbo-inventory\target\classes started by sky in D:\workspace\code\hmily\hmily-demo\hmily-demo-tcc\hmily-demo-tcc-dubbo\hmily-demo-tcc-dubbo-inventory)
+2021-07-04 18:47:36.207 DEBUG 29784 --- [main] d.h.d.d.i.DubboHmilyInventoryApplication : Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2021-07-04 18:47:36.208  INFO 29784 --- [main] d.h.d.d.i.DubboHmilyInventoryApplication : No active profile set, falling back to default profiles: default
+2021-07-04 18:47:38.126 DEBUG 29784 --- [main] org.apache.ibatis.logging.LogFactory     : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2021-07-04 18:47:38.161 DEBUG 29784 --- [main] org.apache.ibatis.io.VFS                 : Using VFS adapter org.mybatis.spring.boot.autoconfigure.SpringBootVFS
+2021-07-04 18:47:38.162 DEBUG 29784 --- [main] org.apache.ibatis.io.ResolverUtil        : Checking to see if class org.dromara.hmily.demo.common.inventory.entity.InventoryDO matches criteria [is assignable to Object]
+2021-07-04 18:47:46.115 ERROR 29784 --- [Curator-Framework-0] o.a.c.f.imps.CuratorFrameworkImpl        : Background operation retry gave up
+
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:102) ~[zookeeper-3.6.0.jar:3.6.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.checkBackgroundRetry(CuratorFrameworkImpl.java:851) [curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.performBackgroundOperation(CuratorFrameworkImpl.java:999) [curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.backgroundOperationsLoop(CuratorFrameworkImpl.java:952) [curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.access$300(CuratorFrameworkImpl.java:66) [curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl$4.call(CuratorFrameworkImpl.java:342) [curator-framework-5.1.0.jar:5.1.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_191]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_191]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
+
+2021-07-04 18:47:46.116 ERROR 29784 --- [Curator-Framework-0] o.a.c.f.imps.CuratorFrameworkImpl        : Background retry gave up
+
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.performBackgroundOperation(CuratorFrameworkImpl.java:981) [curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.backgroundOperationsLoop(CuratorFrameworkImpl.java:952) [curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.access$300(CuratorFrameworkImpl.java:66) [curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl$4.call(CuratorFrameworkImpl.java:342) [curator-framework-5.1.0.jar:5.1.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_191]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_191]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
+
+2021-07-04 18:48:16.350 ERROR 29784 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to register dubbo://192.168.31.161:20880/org.dromara.hmily.demo.common.inventory.api.InventoryService?accepts=0&anyhost=true&application=inventory_service&bean.name=org.dromara.hmily.demo.common.inventory.api.InventoryService&buffer=8192&charset=UTF-8&dubbo=2.0.2&executes=20&generic=false&interface=org.dromara.hmily.demo.common.inventory.api.InventoryService&methods=testDecrease,mockWithTryTimeout,findByProductId,mockWithConfirmTimeout,mockWithTryException,testInLine,decrease&payload=8388608&pid=29784&queues=0&server=netty&side=provider&threadpool=fixed&threads=500&timestamp=1625395659168 to registry localhost:2181, cause: Failed to register dubbo://192.168.31.161:20880/org.dromara.hmily.demo.common.inventory.api.InventoryService?accepts=0&anyhost=true&application=inventory_service&bean.name=org.dromara.hmily.demo.common.inventory.api.InventoryService&buffer=8192&charset=UTF-8&dubbo=2.0.2&executes=20&generic=false&interface=org.dromara.hmily.demo.common.inventory.api.InventoryService&methods=testDecrease,mockWithTryTimeout,findByProductId,mockWithConfirmTimeout,mockWithTryException,testInLine,decrease&payload=8388608&pid=29784&queues=0&server=netty&side=provider&threadpool=fixed&threads=500&timestamp=1625395659168 to zookeeper zookeeper://localhost:2181/com.alibaba.dubbo.registry.RegistryService?application=inventory_service&dubbo=2.0.2&interface=com.alibaba.dubbo.registry.RegistryService&pid=29784&timestamp=1625395659166, cause: KeeperErrorCode = ConnectionLoss for /dubbo
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.register(FailbackRegistry.java:150) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.register(RegistryProtocol.java:126) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.export(RegistryProtocol.java:146) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:55) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.qos.protocol.QosProtocolWrapper.export(QosProtocolWrapper.java:60) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:98) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.rpc.Protocol$Adaptive.export(Protocol$Adaptive.java) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:513) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:358) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:317) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:216) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.config.spring.ServiceBean.export(ServiceBean.java:291) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:131) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:53) ~[dubbo-2.6.5.jar:2.6.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:398) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:355) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:882) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.dromara.hmily.demo.dubbo.inventory.DubboHmilyInventoryApplication.main(DubboHmilyInventoryApplication.java:43) [classes/:na]
+Caused by: com.alibaba.dubbo.rpc.RpcException: Failed to register dubbo://192.168.31.161:20880/org.dromara.hmily.demo.common.inventory.api.InventoryService?accepts=0&anyhost=true&application=inventory_service&bean.name=org.dromara.hmily.demo.common.inventory.api.InventoryService&buffer=8192&charset=UTF-8&dubbo=2.0.2&executes=20&generic=false&interface=org.dromara.hmily.demo.common.inventory.api.InventoryService&methods=testDecrease,mockWithTryTimeout,findByProductId,mockWithConfirmTimeout,mockWithTryException,testInLine,decrease&payload=8388608&pid=29784&queues=0&server=netty&side=provider&threadpool=fixed&threads=500&timestamp=1625395659168 to zookeeper zookeeper://localhost:2181/com.alibaba.dubbo.registry.RegistryService?application=inventory_service&dubbo=2.0.2&interface=com.alibaba.dubbo.registry.RegistryService&pid=29784&timestamp=1625395659166, cause: KeeperErrorCode = ConnectionLoss for /dubbo
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doRegister(ZookeeperRegistry.java:116) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.register(FailbackRegistry.java:137) ~[dubbo-2.6.5.jar:2.6.5]
+	... 24 common frames omitted
+Caused by: java.lang.IllegalStateException: KeeperErrorCode = ConnectionLoss for /dubbo
+	at com.alibaba.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.createPersistent(CuratorZookeeperClient.java:79) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:67) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:62) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:62) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:62) ~[dubbo-2.6.5.jar:2.6.5]
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doRegister(ZookeeperRegistry.java:114) ~[dubbo-2.6.5.jar:2.6.5]
+	... 25 common frames omitted
+Caused by: org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /dubbo
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:102) ~[zookeeper-3.6.0.jar:3.6.0]
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54) ~[zookeeper-3.6.0.jar:3.6.0]
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:1836) ~[zookeeper-3.6.0.jar:3.6.0]
+	at org.apache.curator.framework.imps.CreateBuilderImpl$16.call(CreateBuilderImpl.java:1131) ~[curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CreateBuilderImpl$16.call(CreateBuilderImpl.java:1113) ~[curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:93) ~[curator-client-5.1.0.jar:na]
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:1110) ~[curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:593) ~[curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:583) ~[curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:561) ~[curator-framework-5.1.0.jar:5.1.0]
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:48) ~[curator-framework-5.1.0.jar:5.1.0]
+	at com.alibaba.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.createPersistent(CuratorZookeeperClient.java:76) ~[dubbo-2.6.5.jar:2.6.5]
+	... 30 common frames omitted
+
