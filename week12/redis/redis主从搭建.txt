@@ -1,0 +1,12 @@
+#启动redis 配置redis主从
+redis-server redis6379.conf
+redis-server redis6380.conf
+redis-cli -p 6379
+set port 6379
+redis-cli -p 6380
+set port 6380
+slaveof localhost 6379
+
+#配置redis sentinel 
+redis-sentinel sentinel0.conf
+redis-sentinel sentinel1.conf
