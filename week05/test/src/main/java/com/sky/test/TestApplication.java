@@ -103,7 +103,7 @@ public class TestApplication {
 
 	// 方法四 preparestatement addbatch
 	public static void insert3() {
-		String URL = "jdbc:mysql://127.0.0.1:3306/test?characterEncoding=utf-8";
+		String URL = "jdbc:mysql://127.0.0.1:3306/test?characterEncoding=utf-8&rewriteBatchedStatements=true";
 		String USER = "root";
 		String PASSWORD = "123456";
 		// 1.加载驱动程序
@@ -118,7 +118,7 @@ public class TestApplication {
 
 			String sql = "INSERT INTO eshop_goods(GOOD_ID) value (?)";
 			PreparedStatement statement = conn.prepareStatement(sql);
-			for (int i = 0; i < 10000; i++) {
+			for (int i = 0; i < 100000; i++) {
 				statement.setLong(1, i);
 				statement.addBatch();
 			}
